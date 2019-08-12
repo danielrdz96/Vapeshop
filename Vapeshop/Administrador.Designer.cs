@@ -36,7 +36,6 @@
             this.lAdminUsuario = new System.Windows.Forms.Label();
             this.lAdminCodigo = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -45,6 +44,7 @@
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(430, 249);
+            this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // pictureBox1
             // 
@@ -125,35 +125,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(145, 198);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Adm. Usuarios";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(288, 198);
+            this.button3.Location = new System.Drawing.Point(166, 198);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(123, 23);
             this.button3.TabIndex = 9;
             this.button3.Text = "Cambiar contraseña";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(430, 198);
+            this.button4.Location = new System.Drawing.Point(379, 198);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(109, 23);
             this.button4.TabIndex = 10;
             this.button4.Text = "Cerrar sesion";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // Administrador
             // 
@@ -163,7 +155,6 @@
             this.ClientSize = new System.Drawing.Size(564, 333);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lAdminCodigo);
             this.Controls.Add(this.lAdminUsuario);
@@ -189,7 +180,6 @@
             this.Controls.SetChildIndex(this.lAdminUsuario, 0);
             this.Controls.SetChildIndex(this.lAdminCodigo, 0);
             this.Controls.SetChildIndex(this.button1, 0);
-            this.Controls.SetChildIndex(this.button2, 0);
             this.Controls.SetChildIndex(this.button3, 0);
             this.Controls.SetChildIndex(this.button4, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
@@ -209,7 +199,6 @@
         private System.Windows.Forms.Label lAdminUsuario;
         private System.Windows.Forms.Label lAdminCodigo;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
     }

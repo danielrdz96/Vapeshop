@@ -19,7 +19,14 @@ namespace Vapeshop
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Desea salir?","Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            const string message = "Quieres salir?";
+            const string caption = "Salir";
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else if (result == DialogResult.Yes)
             {
                 this.Close();
             }

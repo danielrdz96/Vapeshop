@@ -44,6 +44,7 @@
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(384, 281);
+            this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // button4
             // 
@@ -54,6 +55,7 @@
             this.button4.TabIndex = 22;
             this.button4.Text = "Cerrar sesion";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button3
             // 
@@ -64,6 +66,7 @@
             this.button3.TabIndex = 21;
             this.button3.Text = "Cambiar contraseña";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button1
             // 

@@ -1,6 +1,6 @@
 ﻿namespace Vapeshop
 {
-    partial class ConsultarProductos
+    partial class Ventas
     {
         /// <summary>
         /// Required designer variable.
@@ -34,18 +34,14 @@
             // 
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(263, 342);
-            // 
-            // ConsultarProductos
+            // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "ConsultarProductos";
-            this.Text = "ConsultarProductos";
-            this.Load += new System.EventHandler(this.ConsultarProductos_Load);
+            this.Name = "Ventas";
+            this.Text = "Ventas";
+            this.Load += new System.EventHandler(this.ConsultarVentas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

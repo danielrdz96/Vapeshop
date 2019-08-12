@@ -42,6 +42,7 @@
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(240, 343);
+            this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // btnIniciar
             // 

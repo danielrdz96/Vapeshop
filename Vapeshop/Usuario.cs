@@ -42,5 +42,24 @@ namespace Vapeshop
             this.Hide();
             con_principal.Show();
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            this.Hide();
+            log.Show();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            this.Hide();
+            log.Show();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+  
+        }
     }
 }

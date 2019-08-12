@@ -136,5 +136,34 @@ namespace Vapeshop
             ConsulClien.MdiParent = this;
             ConsulClien.Show();
         }
+
+        private void ConsultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ventas ConsulVen = new Ventas();
+            ConsulVen.MdiParent = this;
+            ConsulVen.Show();
+        }
+
+        private void FacturaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facturacion factu = new Facturacion();
+            factu.MdiParent = this;
+            factu.Show();
+        }
+
+        private void ContenedorPrincipal_Load(object sender, EventArgs e)
+        {
+       
+        }
+
+        private void ContenedorPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
